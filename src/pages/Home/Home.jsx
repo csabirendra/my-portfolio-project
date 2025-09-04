@@ -25,7 +25,7 @@ function Home({ isDark }) {
 
       <div className="mt-4 text-center">
         <a
-          href="/projects"
+          href="http://localhost:5173/projects"
           className={`btn btn-lg mx-1 ${
             isDark ? "btn-light text-dark" : "btn-primary"
           }`}
@@ -33,7 +33,7 @@ function Home({ isDark }) {
           View Projects
         </a>
         <a
-          href="/social"
+          href="http://localhost:5173/social"
           className={`btn btn-lg mx-1 ${
             isDark ? "btn-outline-light" : "btn-outline-dark"
           }`}

@@ -7,7 +7,7 @@ import "./About.css";
   function About({ isDark }) {
 
   return (
-    <div className={`container my-5 p-3 rounded shadow ${isDark ? "bg-gradient text-light" : "bg-light text-dark"}`}>
+    <div className={`container my-5 p-3 rounded shadow ${isDark ? "bg-dark text-light" : "bg-light text-dark"}`}>
       <h2 className="fw-bold">About Me</h2>
 
       <div className="row align-items-center">

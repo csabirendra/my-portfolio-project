@@ -28,3 +28,15 @@ body.dark-mode {
 .lead {
   text-align: justify;
 }
+
+
+.navbar-dark .navbar-toggler {
+  border: none !important;       /* border hatado */
+  outline: none !important;      /* outline hatado */
+  box-shadow: none !important;   /* click/hover shadow hatado */
+}
+
+.navbar-dark .navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

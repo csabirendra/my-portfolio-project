@@ -6,11 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container, Offcanvas, Button } from 'react-bootstrap';
 import "./App.css";
 
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact";
+import Social from "./pages/Social/Social";
 import Footer from "./components/Footer";
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
       } else {
         setShowNavbar(true);
       }
-      setLastScrollY(window.scrollY);
+      setLastScrollY(window.scrollY); 
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -46,8 +46,9 @@ function App() {
       <Navbar expand="lg" fixed="top" className={`shadow-sm ${isDark === "light" ? "bg-light" : "bg-dark text-white"}`} style={{ top: showNavbar ? 0 : "-80px", transition: "top 0.3s" }}>
         <Container fluid>
           {/* Mobile toggle + Brand */}
-          <Navbar.Toggle aria-controls="offcanvasNavbar" className={isDark === "dark" ? "text-white" : ""} />
-          <Navbar.Brand as={Link} to="/" className={isDark === "dark" ? "text-white" : ""}><strong>Portfolio.Ai</strong></Navbar.Brand>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" className={isDark === "dark" ? "navbar-dark" : "navbar-light"}/>
+
+          <Navbar.Brand as={Link} to="/" className={isDark === "dark" ? "text-white" : ""}><strong>Portfolio</strong></Navbar.Brand>
 
           {/* Offcanvas for Mobile */}
           <Navbar.Offcanvas
@@ -65,7 +66,7 @@ function App() {
                 <Nav.Link as={Link} to="/about" className={isDark === "dark" ? "text-white" : ""}>About</Nav.Link>
                 <Nav.Link as={Link} to="/skills" className={isDark === "dark" ? "text-white" : ""}>Skills</Nav.Link>
                 <Nav.Link as={Link} to="/projects" className={isDark === "dark" ? "text-white" : ""}>Projects</Nav.Link>
-                <Nav.Link as={Link} to="/contact" className={isDark === "dark" ? "text-white" : ""}>Contact</Nav.Link>
+                <Nav.Link as={Link} to="/social" className={isDark === "dark" ? "text-white" : ""}>Social</Nav.Link>
               </Nav>
               <Button variant="outline-none" className="ms-3 no-hover" onClick={toggleisDark}>
                 {isDark === "light" ? "🌙" : "☀️"}
@@ -83,7 +84,7 @@ function App() {
           <Route path="/about" element={<About isDark={isDark === "dark"} />} />
           <Route path="/skills" element={<Skills isDark={isDark === "dark"} />} />
           <Route path="/projects" element={<Projects isDark={isDark === "dark"}  />} />
-          <Route path="/contact" element={<Contact isDark={isDark === "dark"}  />} />
+          <Route path="/social" element={<Social isDark={isDark === "dark"}  />} />
         </Routes>
       </div>
 

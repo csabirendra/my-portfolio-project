@@ -1,0 +1,15 @@
+section {
+  background: #ffffff;
+  /* background: linear-gradient(180deg, #ffffff, #515151f0); */
+  height: 565px;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}

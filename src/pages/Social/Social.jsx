@@ -1,35 +1,42 @@
 // src/pages/Social.jsx
 import React from "react";
 import "./Social.css";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMedium  } from "react-icons/fa";
 
 const socials = [
   {
     id: 1,
     title: "GitHub",
     description: "Explore my repositories & projects.",
-    icon: <FaGithub size={30} />,
+    icon: <FaGithub size={30} color="black" />,
     link: "https://github.com/your-github",
   },
   {
     id: 2,
     title: "LinkedIn",
     description: "Let’s connect professionally.",
-    icon: <FaLinkedin size={30} />,
+    icon: <FaLinkedin size={30} color="#0e6dc0ff" />,
     link: "https://linkedin.com/in/your-linkedin",
   },
   {
     id: 3,
     title: "Twitter",
     description: "Follow me for updates.",
-    icon: <FaTwitter size={30} />,
+    icon: <FaTwitter size={30} color="#1682e1ff" />,
     link: "https://twitter.com/your-twitter",
   },
   {
     id: 4,
     title: "Email",
     description: "Reach me directly via email.",
-    icon: <FaEnvelope size={30} />,
+    icon: <FaEnvelope size={30} color="#eb0101ff"/>,
+    link: "mailto:yourmail@example.com",
+  },
+  {
+    id: 5,
+    title: "Medium",
+    description: "Reach me directly via email.",
+    icon: <FaMedium size={30} color="#000000ff"/>,
     link: "mailto:yourmail@example.com",
   },
 ];
@@ -56,7 +63,7 @@ function Social({ isDark }) {
                 {/* Front */}
                 <div
                   className={`flip-card-front d-flex flex-column justify-content-center align-items-center p-2 ${
-                    isDark ? "bg-secondary text-light" : "bg-white text-dark"
+                    isDark ? "bg-secondary text-light" : "bg-light text-dark"
                   }`}
                 >
                   <div className="mb-2">{c.icon}</div>

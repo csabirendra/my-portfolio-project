@@ -1,11 +1,9 @@
-
-
-
 .flip-card {
   perspective: 1000px;
-  width: 270px;   /* card width */
-  height: 220px;  /* card height */
-  /* margin: auto; */
+  width: 100%;               /* full width of parent column */
+  max-width: 280px;          /* limit max size */
+  height: 220px;             /* default height */
+  margin: auto;              /* center in column */
 }
 
 .flip-card-inner {
@@ -28,7 +26,6 @@
   backface-visibility: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,23 +43,31 @@
   text-align: center;
 }
 
-/* Project image inside card */
 .project-img {
-  width: 200px;
-  height: 80px;       /* fixed height but not too big */
-  object-fit: contain;   /* nicely crop & fill */
+  width: 90%;                /* responsive image */
+  height: auto;              /* maintain aspect ratio */
+  max-height: 100px;         /* limit height */
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 0.75rem;
-  /* background: #eee;     */
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ✅ Responsive design */
+@media (max-width: 992px) {
   .flip-card {
-    width: 260px;
-    height: 340px;
+    height: 200px;           /* adjust for tablets */
   }
   .project-img {
-    height: 180px;
+    max-height: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .flip-card {
+    max-width: 100%;         /* take full width */
+    height: 180px;           /* smaller height for mobile */
+  }
+  .project-img {
+    max-height: 70px;
   }
 }

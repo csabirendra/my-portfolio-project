@@ -43,12 +43,12 @@ function App() {
   return (
     <Router>
       {/* Navbar */}
-      <Navbar expand="lg" fixed="top" className={`shadow-sm ${isDark === "light" ? "bg-light" : "bg-dark text-white"}`} style={{ top: showNavbar ? 0 : "-80px", transition: "top 0.3s" }}>
+      <Navbar expand="lg" fixed="top" className={`shadow-sm align-item-center ${isDark === "light" ? "bg-light" : "bg-dark text-white"}`} style={{ top: showNavbar ? 0 : "-80px", transition: "top 0.3s" }}>
         <Container fluid>
           {/* Mobile toggle + Brand */}
           <Navbar.Toggle aria-controls="offcanvasNavbar" className={isDark === "dark" ? "navbar-dark" : "navbar-light"}/>
 
-          <Navbar.Brand as={Link} to="/" className={isDark === "dark" ? "text-white" : ""}><strong>Portfolio</strong></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" className={isDark === "dark" ? "text-white" : ""}><strong> Portfolio</strong></Navbar.Brand>
 
           {/* Offcanvas for Mobile */}
           <Navbar.Offcanvas

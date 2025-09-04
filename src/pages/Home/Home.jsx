@@ -9,7 +9,7 @@ import Social from "../Social/Social";
 function Home({ isDark }) {
   return (
     <section
-      className={`d-flex flex-column justify-content-center align-items-center w-100 p-0 mt-5 text-center rounded ${isDark ? "bg-light text-light" : "bg-light text-dark"}`}
+      className={`d-flex flex-column justify-content-center align-items-center w-100 p-0 mt-5 text-center rounded ${isDark ? "bg-dark text-light" : "bg-white text-dark"}`}
     >
       <h1 className="display-3 fw-bold">Hi, I'm Birendra 🚀</h1>
 

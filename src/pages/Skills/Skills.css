@@ -1,0 +1,38 @@
+/* Mild light/dark background colors */
+.bg-light-mode {
+  background-color: #f0f0f0; /* slightly off-white */
+}
+
+.bg-dark-mode {
+  background-color: #262626; /* light gray for dark toggle */
+}
+
+.text-dark-mode-text {
+  color: #212529;
+}
+
+/* Skill cards */
+.skill-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.877);
+}
+
+/* Dark/light card adjustments */
+.bg-light-card {
+  background-color: #d8d8d8cb;
+}
+
+.bg-dark-card {
+  background-color: #98b3bb9a;
+}
+
+/* Toggle hover disabled */
+.no-hover:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: transparent !important;
+}

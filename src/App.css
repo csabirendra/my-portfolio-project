@@ -1,0 +1,30 @@
+/* General content padding for fixed navbar */
+.content {
+  padding-top: 80px; /* Navbar height */
+  padding-bottom: 50px; /* Footer space */
+}
+
+/* Sticky footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Dark/Light body */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark-mode {
+  background-color: #212529;
+  color: #c4cbd2;
+}
+
+/* Text justify for About / Skills etc. */
+.lead {
+  text-align: justify;
+}

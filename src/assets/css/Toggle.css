@@ -1,0 +1,46 @@
+/* Navbar toggle outline remove */
+.navbar-toggler {
+  border: none;
+}
+
+
+
+
+/* Hover disable for buttons */
+.no-hover:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: transparent !important;
+}
+
+/* Mobile navbar collapse slide from right */
+@media (max-width: 991px) {
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #ffffff; /* Light mode default */
+    width: 50%; /* Mobile menu 50% of screen */
+    max-width: 100px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 1050;
+    padding-top: 5px; /* Navbar height */
+  }
+
+  #navbarNav.show {
+    transform: translateY(6.25%);
+  }
+
+  /* Dark mode for collapse */
+  body.dark-mode #navbarNav {
+    background-color: #212529;
+  }
+
+  #navbarNav .nav-link {
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-align: right;
+  }
+}

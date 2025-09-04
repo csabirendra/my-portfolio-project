@@ -1,0 +1,11 @@
+/* Footer.css */
+.footer {
+  position: fixed;   /* Hamesha screen ke niche stick kare */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* Upar aane ke liye */
+}
+.content {
+  padding-bottom: 60px; /* Footer height ke barabar */
+}

@@ -11,11 +11,13 @@ function Home({ isDark }) {
 
       <ReactTyped
         strings={[
-          "React Developer 💻",
-          "Cybersecurity Enthusiast 🔐",
-          "Building Cool Apps 🚀",
+          "React💻",
+          "SQL Server🗄️",
+          "NodeJS📦",
+          "API Testing🔗🌐",
+          "ERPNext🏢📊📋",
         ]}
-        typeSpeed={60}
+        typeSpeed={40}
         backSpeed={40}
         loop
         className={`lead mt-3 ${isDark ? "text-light" : "text-dark"}`}
